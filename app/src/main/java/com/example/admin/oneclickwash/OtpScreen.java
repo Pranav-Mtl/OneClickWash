@@ -30,6 +30,7 @@ import android.widget.Toast;
 import com.example.admin.oneclickwash.BL.OtpVerificationBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 public class OtpScreen extends AppCompatActivity {
 
@@ -86,6 +87,18 @@ public class OtpScreen extends AppCompatActivity {
             Constant.STR_OTP = otp;
 
             new ResendOTP().execute(mobile,otp);
+        }
+
+        try {
+            Application.tracker().setScreenName("OTP Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("OTP Screen Open")
+                    .setCategory("OTP")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
         }
 
 

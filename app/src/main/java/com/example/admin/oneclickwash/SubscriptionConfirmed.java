@@ -31,6 +31,7 @@ import com.example.admin.oneclickwash.BL.SubscriptionConfirmedBL;
 import com.example.admin.oneclickwash.BL.ValidateReferalBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 import java.util.concurrent.ExecutionException;
 
@@ -123,6 +124,18 @@ public class SubscriptionConfirmed extends AppCompatActivity implements View.OnC
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Subscription Confirmation Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Subscription Confirmation Screen Open")
+                    .setCategory("Subscription Confirmation")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
 
 
     }

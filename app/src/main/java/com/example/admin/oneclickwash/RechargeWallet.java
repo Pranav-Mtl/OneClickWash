@@ -24,6 +24,7 @@ import android.widget.TextView;
 import com.example.admin.oneclickwash.BL.RechargeWalletBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 public class RechargeWallet extends AppCompatActivity implements View.OnClickListener {
     Button etCredit50,etCredit100,etCredit200;
@@ -99,6 +100,18 @@ public class RechargeWallet extends AppCompatActivity implements View.OnClickLis
         btnAddCredit.setOnClickListener(this);
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Recharge Wallet Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Recharge Wallet Screen Open")
+                    .setCategory("Recharge Wallet")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
     }
 
     @Override

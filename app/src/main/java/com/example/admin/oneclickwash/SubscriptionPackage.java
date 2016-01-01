@@ -34,6 +34,7 @@ import com.example.admin.oneclickwash.Adapter.SubscriptionPackageAdapter;
 import com.example.admin.oneclickwash.BL.SubscriptionPackageBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -108,6 +109,18 @@ public class SubscriptionPackage extends AppCompatActivity implements View.OnCli
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Subscription Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Subscription Screen Open")
+                    .setCategory("Subscription")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
 
         //expListView.setOnGroupClickListener(this);
     }

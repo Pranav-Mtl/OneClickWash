@@ -28,6 +28,7 @@ import android.widget.Toast;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
 import com.example.admin.oneclickwash.BL.SignUpScreenBL;
+import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -102,6 +103,18 @@ public class SignUpScreen extends AppCompatActivity {
         tvTerm= (TextView) findViewById(R.id.tv_tc);
         cbTerm= (CheckBox) findViewById(R.id.check_box_term);
         pd=new ProgressDialog(SignUpScreen.this);
+
+        try {
+            Application.tracker().setScreenName("Signup Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Signup Screen Open")
+                    .setCategory("Signup")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
 
 
         deviceId=Util.getSharedPrefrenceValue(getApplicationContext(),Constant.SP_DEVICE_ID);

@@ -26,6 +26,7 @@ import com.example.admin.oneclickwash.BL.LoginScreenBL;
 import com.example.admin.oneclickwash.BL.SignUpScreenBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -77,6 +78,18 @@ public class LoginScreen extends AppCompatActivity {
         {
             xx=400;
             yy=500;
+        }
+
+        try {
+            Application.tracker().setScreenName("Login Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Login Screen Open")
+                    .setCategory("Login")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
         }
 
 

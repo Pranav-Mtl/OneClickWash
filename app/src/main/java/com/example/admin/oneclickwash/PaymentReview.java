@@ -24,6 +24,7 @@ import com.example.admin.oneclickwash.BE.PaymentReviewBE;
 import com.example.admin.oneclickwash.BL.PaymentReviewBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 public class PaymentReview extends AppCompatActivity implements View.OnClickListener {
 
@@ -87,6 +88,18 @@ public class PaymentReview extends AppCompatActivity implements View.OnClickList
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Payment Review Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Payment Review Screen Open")
+                    .setCategory("Payment Review")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
     }
 
     @Override

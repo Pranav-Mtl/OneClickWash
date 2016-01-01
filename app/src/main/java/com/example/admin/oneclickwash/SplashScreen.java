@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
@@ -35,6 +36,18 @@ public class SplashScreen extends AppCompatActivity {
 
         userId= Util.getSharedPrefrenceValue(getApplicationContext(), Constant.SP_USER_ID);
         deviceId=Util.getSharedPrefrenceValue(getApplicationContext(),Constant.SP_DEVICE_ID);
+
+        try {
+            Application.tracker().setScreenName("Splash Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Splash Screen")
+                    .setCategory("Splash Screen")
+                    .setAction("App Launch")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
 
         if(deviceId==null){
         String android_id = Settings.Secure.getString(getApplicationContext().getContentResolver(),

@@ -36,6 +36,7 @@ import com.example.admin.oneclickwash.BL.HomeScreenBL;
 import com.example.admin.oneclickwash.Configuration.RecyclerItemClickListener;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -229,6 +230,18 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         mDrawerToggle.syncState();
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Home Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Home Screen Open")
+                    .setCategory("Home")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
     }
 
     @Override

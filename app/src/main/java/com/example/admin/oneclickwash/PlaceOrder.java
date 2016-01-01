@@ -37,6 +37,7 @@ import android.widget.Toast;
 import com.example.admin.oneclickwash.BE.PlaceOrderBE;
 import com.example.admin.oneclickwash.BL.GetTimeSlotBL;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -111,6 +112,18 @@ public class PlaceOrder extends AppCompatActivity implements View.OnClickListene
 
         popupSize();
         //setTimePicker();
+
+        try {
+            Application.tracker().setScreenName("Place Order Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Place Order Screen Open")
+                    .setCategory("Place Order")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
     }
 
     private void popupSize(){

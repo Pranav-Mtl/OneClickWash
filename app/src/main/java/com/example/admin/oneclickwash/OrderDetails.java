@@ -28,6 +28,7 @@ import com.example.admin.oneclickwash.BL.HomeScreenBL;
 import com.example.admin.oneclickwash.BL.PlaceOrderBL;
 import com.example.admin.oneclickwash.Configuration.Util;
 import com.example.admin.oneclickwash.Constant.Constant;
+import com.google.android.gms.analytics.HitBuilders;
 
 public class OrderDetails extends AppCompatActivity implements View.OnClickListener{
 
@@ -104,6 +105,18 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         popupSize();
+
+        try {
+            Application.tracker().setScreenName("Order Confirmation Screen");
+            Application.tracker().send(new HitBuilders.EventBuilder()
+                    .setLabel("Order Confirmation Screen Open")
+                    .setCategory("Order Confirmation")
+                    .setAction("UI OPEN")
+                    .build());
+
+        } catch (Exception e) {
+
+        }
     }
 
     @Override
