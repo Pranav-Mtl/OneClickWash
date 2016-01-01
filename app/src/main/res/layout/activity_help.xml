@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.admin.oneclickwash.Help">\
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_bg"
+        app:theme="@style/Toolbar_Theme"
+        android:layout_gravity="center"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="We'd love to hear from you!"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send us an email by typing below.\n We'll get back to you ASAP."
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            />
+
+        <!-- <TextView
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Suggestions :"
+             android:textSize="17sp"
+             android:textColor="@color/BlueTextColor"
+             />-->
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Type your message here.."
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:background="@color/gray_color"
+
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="fill_parent"
+            android:background="@drawable/customized_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_button_size"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

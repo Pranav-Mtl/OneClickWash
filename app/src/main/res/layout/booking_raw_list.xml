@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    android:background="@color/white"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/rl_sale_list"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/gray_color"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/booking_list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColor"
+            android:background="@android:color/transparent"
+            android:minHeight="@dimen/min_button_size"
+
+
+            />
+            <Button
+                android:id="@+id/booking_list_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Detail"
+                android:textColor="@color/white"
+                android:background="@drawable/customized_button"
+                android:minHeight="@dimen/min_button_size"
+                android:padding="5dp"
+                android:textSize="@dimen/pricing_text_size"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/booking_list_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ordered on 12 dec 2015"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textColor"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/booking_list_pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup date"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_order_date"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/booking_list_pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time slot"
+            android:drawableLeft="@drawable/ic_order_time"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/booking_list_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Picked"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColor"
+            />
+        <RelativeLayout
+            android:id="@+id/layout_reschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/booking_list_reschedue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/min_button_size"
+                android:background="@drawable/button_flat_customized"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_booking_reschedule"
+                android:text="Reschedule Pick-up"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/pricing_text_size"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+        <Button
+            android:id="@+id/booking_list_cancel"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minHeight="@dimen/min_button_size"
+            android:background="@drawable/button_flat_customized"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_booking_cancel"
+            android:text="Cancel Pick-up"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/pricing_text_size"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_dropoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/booking_list_schedule_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/min_button_size"
+                android:background="@drawable/button_flat_customized"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_booking_reschedule"
+                android:text="Schedule Delivery"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/pricing_text_size"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_drop_reschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/booking_list_reschedule_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/min_button_size"
+                android:background="@drawable/button_flat_customized"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_booking_reschedule"
+                android:text="Reschedule Delivery"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/pricing_text_size"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

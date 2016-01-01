@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColorSecondary">@color/textSecondaryColor</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/lightGreen</item>
+        <item name="android:actionMenuTextColor">@color/textColor</item>
+        <item name="colorControlHighlight">@color/lightGreen</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@color/sky</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:background">@color/gray_color</item>
+        <item name="android:textColor">@color/textColor</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar_Theme">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+</resources>

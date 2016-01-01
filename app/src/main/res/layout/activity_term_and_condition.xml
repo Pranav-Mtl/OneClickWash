@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.admin.oneclickwash.TermAndCondition">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_bg"
+        app:theme="@style/Toolbar_Theme"
+        android:layout_gravity="center"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_bg"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Subscription package expires either on consumption of number of clothes or consumption of number of pickups, or after one month of subscription, whichever happens earlier. Customer has to renew subscription if either of the above three conditions is exhausted within a month of subscription."
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="We do not mix one customer’s clothes with another customer’s clothes during washing and drying. Each customer’s clothes are washed separately in one machine cycle. Our in-house experts exercise utmost care in processing articles entrusted to us, using the method that is best suited to its nature and condition to give best results.However, in the rare cases of articles being lost/damaged, 10 times of the service rate charged for that article will be given if claimed within 24 hours of delivery.The article, whether partially or completely damaged must be retained by us upon full settlement of claim unless otherwise agreed."
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We reserve the right of approval of items that can be laundered or washed in one machine cycle."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick-up and delivery appointments will always be in slots during business hours (from 8 am to 10 pm). Customers can choose their convenient pickup and delivery time slots from the available slots which are shown online (App/Website). Pickups and Deliveries are done on a FIFO basis as per the slots chosen by the customers and no special request will be entertained unless mutually agreed by the company and the customer."/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Every effort is made to deliver clothes within 48-72 hours of pick up, but due to some unforeseen circumstances, if the delivery becomes late, the customer is not entitled for any compensation or reduction in the charges. We put all efforts to respect the agreed pickup and delivery period and timeliness. Delays do not however give any right to compensation."/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clothes will be handed over to security or friend or neighbor in case of customer not being available only when a written confirmation is provided from the customer in the form of a mail or text message."/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We do not assume responsibilities for inherent weaknesses, color loss, shrinkage, and damage to weak and tender fabrics or defects in materials that are not visibly apparent prior to processing. This applies particularly, but not exclusively to suede’s, leathers, silks, satins, double-face fabrics, vinyl, polyurethanes etc. "/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We will not take any liability for stains, color bleeding, loss of buttons, cloth stretching and other such issues. These issues primarily happen with cloth ageing and not a result of our laundry process. "/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The company aims to provide the best quality of cleaning available as per its standard methods; however, does not guarantee the removal of all stains on an article. Stain removal is a very complicated process and we do not guarantee stain removal in any case. Whenever possible, the company will notify the customer of stains and issues that cannot be resolved due to further possible damage to the fabric. For any special treatment to clothes, customers need to intimate upfront to the pickup person or the company office; special rates will be charged depending on the treatment process. "/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The customers must remove any ornaments or special buttons before sending for laundry. Responsibility is disclaimed for trimmings, buckles, beads, buttons, belts, shoulder pads and sequins etc. "/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We shall not take responsibility for any loose items lost when submitted in our laundry bag, such as watches, jewelry, or cufflinks.However, if we spot any such items, we proactively inform the concerned customer. "/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In case of designer wear, the charges could vary and final applicable price will be at our sole discretion. We recommend customers to ‘dry clean’ their valuable articles and not to process it along with other clothes for normal machine wash. Customers can give such special treatment clothes separately during pickup. We do not assume responsibility for any kind of damage if customer agrees to send such valuable articles for normal machine wash. "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The acknowledgement sheet provided by our field staff is not the ultimatum. There is a chance of counting mistake here and we are not liable for the same. The exact count will be provided after the clothes reach our facility. Customer is not entitled for any compensation in these cases. "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="	All articles must be inspected and customer’s dissatisfaction, if any, shall be made known at time of collection, laundry service shall not be responsible for subsequent complaints."/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Any complaint must be emailed to support@oneclickwash.com with pictures or snapshots of the article to help us understand the complaint better. Our team will respond to your complaint within 24-48 hours from receipt of your email."/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prices for our products are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time. We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.  "/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We cannot be held responsible for delay, loss or damage to any arising from unforeseen circumstances or from causes beyond control.  "/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Government Taxes shall be extra, if applicable. The Service Tariff is subject to change without notice.   "/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is assumed that member/customer agrees to receive transactional and promotionalEmail/SMS/WhatsApp messages from us on their registered mobile number."/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

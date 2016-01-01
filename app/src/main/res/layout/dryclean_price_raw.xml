@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+
+        >
+        <TextView
+            android:id="@+id/dryclean_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="List of Items"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/pricing_text_size"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/dryclean_discounted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Discounted Price"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/textColor"
+
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/dryclean_original"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Original Rates"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/textColor"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColor"
+        />
+</LinearLayout>

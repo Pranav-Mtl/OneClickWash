@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/popup_element"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/referral_popup_bg"
+        >
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/button_default"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold"
+            />
+
+        <RadioGroup
+            android:id="@+id/group_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+            <RadioButton
+                android:id="@+id/payment_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button_selector"
+                android:text="Cash on Pickup"
+                android:drawablePadding="5dp"
+                />
+            <RadioButton
+                android:id="@+id/payment_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button_selector"
+                android:text="Online"
+                android:drawablePadding="5dp"
+                />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/popup_clothes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/small_text_size"
+            android:layout_marginTop="10dp"
+            android:singleLine="false"
+            android:inputType="number"
+            android:maxLength="2"
+
+            android:textColorHint="@color/dark_gray_color"
+            android:hint="Enter no. of clothes between 1 to 20"
+            android:visibility="gone"
+            android:background="@color/gray_color"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+
+            >
+            <Button
+                android:id="@+id/popup_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customized_button"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="@dimen/small_text_size"
+                android:padding="5dp"
+                android:minHeight="@dimen/min_button_size"
+
+                />
+
+            <Button
+                android:id="@+id/popup_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/customized_button"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="@dimen/small_text_size"
+                android:padding="5dp"
+                android:minHeight="@dimen/min_button_size"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popup_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fe1119"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

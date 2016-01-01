@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">OneClickWash</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sing_in_screen">SingInScreen</string>
+    <string name="title_activity_sign_up_screen">SignUpScreen</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_price_list">PriceList</string>
+    <string name="title_activity_otp_screen">OtpScreen</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_section1"></string>
+    <string name="title_section2"></string>
+    <string name="title_section3"></string>
+    <string name="title_section4"></string>
+    <string name="title_section5"></string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- SignUp  messages -->
+    <string name="mobile_no_exist">Mobile number already exist.</string>
+    <string name="device_id_exist">You have already signed up in this device with different Mobile number.</string>
+    <string name="signup_success">Please verify mobile number</string>
+
+    <!-- SignIn  messages-->
+    <string name="signin_failure">Invalid Mobile or Password.</string>
+    <string name="otp">Please verify mobile number first.</string>
+    <string name="signin_success">Successfully Sign in</string>
+
+    <!--  OTP messages -->
+    <string name="otp_incorrect">Incorrect OTP</string>
+    <string name="otp_success">Successful Sign up</string>
+    <string name="otp_message">We are trying to auto verify your mobile number.</string>
+
+    <!-- string for popup comes when no response from server. -->
+    <string name="_no_response_title">D\'oh!</string>
+    <string name="_no_response_message">Sorry, something didn\'t quite work.</string>
+    <string name="_no_response_save">Try again?</string>
+    <string name="_no_response_cancel">Cancel</string>
+
+    <!-- string for popup comes when no internet. -->
+    <string name="_no_internet_title">No Internet</string>
+    <string name="_no_internet_message">Looks like you have no or very slow data connectivity.</string>
+    <string name="_no_internet_save">Try again?</string>
+    <string name="_no_internet_ok">OK</string>
+    <string name="_no_internet_cancel">Cancel</string>
+
+    <!-- string for popup comes when no booking. -->
+    <string name="_no_booking_title">No Booking</string>
+    <string name="_no_booking_message">You haven\'t placed any order yet.</string>
+    <string name="_no_booking_save">Place Order</string>
+    <string name="_no_booking_cancel">OK</string>
+
+    <!-- string for popup comes when no notification. -->
+    <string name="_no_notification_title">No Notification</string>
+    <string name="_no_notification_message">You haven\'t recieved any notification yet.</string>
+    <string name="_no_notification_save">Place Order</string>
+    <string name="_no_notification_cancel">OK</string>
+
+    <!-- my account messages -->
+    <string name="required_name">Please enter name</string>
+    <string name="required_address">Please enter address</string>
+
+    <!-- subscription messages -->
+    <string name="payment">Please select payment option</string>
+
+    <!-- order details messages -->
+    <string name="invalid_pickup_time">Pickup time must be greater than current time.</string>
+    <string name="invalid_drop_time">Drop time must be greater than current time.</string>
+    <string name="invalid_pickup_date">Pickup date must be greater than currrent date.</string>
+    <string name="invalid_drop_date">Drop date must be greater than currrent date.</string>
+
+    <!-- schedule my details -->
+
+    <string name="no_package_selected">Please select a package</string>
+
+    <string name="_referral_title">Add Referal/Promo Code</string>
+    <string name="_referral_message"></string>
+    <string name="_referral_save">Apply</string>
+    <string name="_referral_cancel">Cancel</string>
+
+    <string name="_payment_title">Select Payment Method</string>
+    <string name="_payment_message"></string>
+    <string name="_payment_save">Done</string>
+    <string name="_payment_cancel">Cancel</string>
+
+    <string name="_dryclean_title">Do you want to give clothes for DRY CLEAN also?</string>
+    <string name="_dryclean_message"></string>
+    <string name="_dryclean_save">Done</string>
+    <string name="_dryclean_cancel">Cancel</string>
+    <string name="_dryclean_yes">YES</string>
+    <string name="_dryclean_no">NO</string>
+
+    <string name="_cancel_title">Are you sure to Cancel this Pickup?</string>
+    <string name="_cancel_message"></string>
+    <string name="_cancel_save">Confirm</string>
+    <string name="_cancel_cancel">Cancel</string>
+    <string name="_cancel_yes">YES</string>
+    <string name="_cancel_no">NO</string>
+
+    <string name="_address_title">Change Your Address</string>
+    <string name="_address_message"></string>
+    <string name="_address_save">Done</string>
+    <string name="_address_cancel">Cancel</string>
+
+
+    <!-- string for drawer item -->
+    <string-array name="drawer_item">
+        <item>Home</item>
+        <item>PriceList</item>
+        <item>feedback/Complaint</item>
+        <item>Notification</item>
+        <item>Faq</item>
+        <item>Rate Us</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+        <item>Change Address/View</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string-array name="order_type">
+        <item>Type of service</item>
+        <item>Wash-Dry-Iron</item>
+        <item>Dry Cleaning</item>
+    </string-array>
+
+    <string name="mandatory_fields">Mandatory field</string>
+    <string name="title_activity_account">Account</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.oneclickwash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.example.admin.oneclickwash.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDJJC3Z7hFCB2Lub_j1AKxjxHC7bl_RwDg" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- GOOGLE GCM Reciever -->
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.aggregator.loop" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMNotificationIntentService" />
+
+        <activity
+            android:name=".SignUpScreen"
+            android:label="@string/title_activity_sign_up_screen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".HomeScreen"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PriceList"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".OtpScreen"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".LoginScreen"
+            android:label="@string/title_activity_login_screen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".SubscriptionPackage"
+            android:label=""
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SubscriptionConfirmed"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Account"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PlaceOrder"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".OrderDetails"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Profile"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ChangePassword"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".TermAndCondition"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Help"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ContactUs"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ReferInvite"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".RechargeWallet"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".BookingList"
+            android:label=""
+
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".BookingDetail"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".BookingRate"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Tutorial"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".RechargeWebView"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PaymentReview"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PaymentWebview"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ScheduleDrop"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ReschedulePick"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ForgotPassword"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Notification"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RescheduleDrop"
+            android:label=""
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+    </application>
+
+</manifest>

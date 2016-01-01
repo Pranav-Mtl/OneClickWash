@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/monthly_users"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="No of Users"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:textColor="@color/textColor"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/monthly_clothes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No of Clothes"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:textColor="@color/textColor"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/monthly_pickup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No of Free Pickups"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:textColor="@color/textColor"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/monthly_package"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Package Price (INR)"
+            android:gravity="center"
+            android:textSize="@dimen/pricing_text_size"
+            android:textColor="@color/textColor"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColor"
+            />
+        <CheckBox
+            android:id="@+id/monthly_checkbox"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:button="@null"
+            android:drawableLeft="@drawable/check_box_selector"
+
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColor"
+        />
+</LinearLayout>

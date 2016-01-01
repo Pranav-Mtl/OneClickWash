@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.admin.oneclickwash.RechargeWallet">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_bg"
+        app:theme="@style/Toolbar_Theme"
+        android:layout_gravity="center"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge Wallet"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/gray_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_money"
+                />
+            <TextView
+                android:id="@+id/credit_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="20dp"
+                android:text="Current balance: "
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                />
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="@dimen/loop_credit_text_size"
+                 android:text="(1 Loop credit = ₹ 1)"
+                 android:textColor="@color/TextColor"
+                 />-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/credit_fifty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_money_bg_small"
+                    android:text="₹50"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:editable="false"
+
+                    />
+                <Button
+                    android:id="@+id/credit_hundred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_money_bg_small"
+                    android:text="₹100"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:editable="false"
+                    />
+                <Button
+                    android:id="@+id/credit_two_hundred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_money_bg_small"
+                    android:text="₹200"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:editable="false"
+
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/credit_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_money_bg_big"
+                android:layout_marginTop="10dp"
+                android:hint="Enter amount "
+                android:paddingLeft="5dp"
+                android:inputType="number"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/dark_gray_color"
+
+                />
+
+            <Button
+                android:id="@+id/btn_buy_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customized_button"
+                android:text="Buy"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+
+                android:minHeight="@dimen/min_button_size"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

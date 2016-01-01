@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@drawable/ic_tutorial_four"
+    android:layout_height="match_parent" tools:context="com.aggregator.loop.TutorialFragmentFour">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_tutorial_four"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/ll_tut_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_flat_customized"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

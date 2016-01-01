@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.admin.oneclickwash.Profile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_bg"
+        app:theme="@style/Toolbar_Theme"
+        android:layout_gravity="center"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:textColorHint="@color/textColor"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_profile_name"
+                android:hint="Name "
+                android:textColor="@color/textColor"
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/textColor"
+                android:backgroundTint="@color/black"
+                android:textColorHighlight="@color/textColor"
+                android:drawablePadding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/textColor"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_profile_email"
+                android:hint="Email "
+                android:textColor="@color/textColor"
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/textColor"
+                android:textColorHighlight="@color/textColor"
+                android:backgroundTint="@color/black"
+                android:drawablePadding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/textColor"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_profile_mobile"
+                android:hint="Mobile "
+                android:textColor="@color/textColor"
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/textColor"
+                android:backgroundTint="@color/black"
+                android:textColorHighlight="@color/textColor"
+                android:drawablePadding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/textColor"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_profile_location"
+                android:hint="Address "
+                android:textColor="@color/textColor"
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/textColor"
+                android:textColorHighlight="@color/textColor"
+                android:backgroundTint="@color/black"
+                android:drawablePadding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/profile_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Update Changes"
+            android:textColor="@color/white"
+            android:background="@drawable/customized_button"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:minHeight="@dimen/button_size"
+            />
+
+        <Button
+            android:id="@+id/profile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:background="@drawable/customized_button"
+            android:textAllCaps="false"
+            android:minHeight="@dimen/button_size"
+            />
+
+        <Button
+            android:id="@+id/profile_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Change Password"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/customized_button"
+            android:minHeight="@dimen/button_size"
+            />
+
+        <TextView
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:text="You can edit your Name, Email-Id and Address."
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
