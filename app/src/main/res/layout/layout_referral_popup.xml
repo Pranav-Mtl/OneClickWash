@@ -35,7 +35,7 @@
             android:layout_marginRight="10dp"
             android:textSize="@dimen/small_text_size"
             android:layout_marginTop="10dp"
-            android:singleLine="false"
+            android:singleLine="true"
             android:textColorHint="@color/dark_gray_color"
             android:hint="Enter code"
             android:backgroundTint="@color/dark_gray_color"

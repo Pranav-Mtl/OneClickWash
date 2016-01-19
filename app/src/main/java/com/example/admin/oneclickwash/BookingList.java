@@ -285,5 +285,10 @@ public class BookingList extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(),HomeScreen.class));
+        finish();
     }
+
+
+
+
 }

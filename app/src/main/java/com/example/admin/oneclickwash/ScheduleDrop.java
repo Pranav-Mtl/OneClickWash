@@ -173,19 +173,6 @@ public class ScheduleDrop extends AppCompatActivity implements View.OnClickListe
         dateTextView.setText(
                 dateViewFormatter.format(dateToDisplay.getTime())
         );
-        // Buttons
-        dialogBuilder.setNegativeButton(
-                "Go to today",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        btndate.setText(
-                                formatter.format(now.getTime())
-                        );
-                        dialog.dismiss();
-                    }
-                }
-        );
 
         dialogBuilder.setPositiveButton(
                 "Choose",
@@ -333,7 +320,7 @@ public class ScheduleDrop extends AppCompatActivity implements View.OnClickListe
         strDate=btndate.getText().toString();
         strTime=spnTime.getSelectedItem().toString();
         if(spnTime.getSelectedItemPosition()!=0)
-        dropSlotID=objGetTimeSlotBL.dropListSLotID.get(spnTime.getSelectedItemPosition()).toString();
+        dropSlotID=objGetTimeSlotBL.dropListSLotID.get(spnTime.getSelectedItemPosition()-1).toString();
 
         if(strDate.equalsIgnoreCase("Select Date")){
             flag=false;
@@ -371,6 +358,7 @@ public class ScheduleDrop extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
     /* popup for no internet */
     private void showDialogInternet(Context context){
         // x -->  X-Cordinate

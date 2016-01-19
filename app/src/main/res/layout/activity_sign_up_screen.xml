@@ -187,6 +187,9 @@
                 android:layout_height="wrap_content"
                 android:text="I agree to the Terms and Conditions"
                 android:padding="10dp"
+                android:textColorLink="@color/sky"
+                android:linksClickable="true"
+                android:autoLink="all"
                 android:textColor="#ffffff"/>
         </LinearLayout>
 

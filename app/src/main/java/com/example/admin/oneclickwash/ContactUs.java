@@ -34,6 +34,7 @@ public class ContactUs extends AppCompatActivity {
         });
     }
 
+
     private void initialize(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

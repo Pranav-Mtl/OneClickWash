@@ -216,19 +216,7 @@ public class PlaceOrder extends AppCompatActivity implements View.OnClickListene
         dateTextView.setText(
                 dateViewFormatter.format(dateToDisplay.getTime())
         );
-        // Buttons
-        dialogBuilder.setNegativeButton(
-                "Go to today",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        btnDate.setText(
-                                formatter.format(now.getTime())
-                        );
-                        dialog.dismiss();
-                    }
-                }
-        );
+
 
         dialogBuilder.setPositiveButton(
                 "Choose",
@@ -337,7 +325,6 @@ public class PlaceOrder extends AppCompatActivity implements View.OnClickListene
             flag=false;
             Toast.makeText(getApplicationContext(),"Please select pickup date",Toast.LENGTH_SHORT).show();
         }else if(strTime.equalsIgnoreCase("Select Time slot")){
-
             flag=false;
             Toast.makeText(getApplicationContext(),"Please select time slot",Toast.LENGTH_SHORT).show();
         }
@@ -423,13 +410,18 @@ public class PlaceOrder extends AppCompatActivity implements View.OnClickListene
                                        public void onClick(View v) {
                                             if(rbYes.isChecked()){
                                                 if(etClothes.getText().toString().length()>0 && !(etClothes.getText().toString().equalsIgnoreCase("0"))){
-                                                    objPlaceOrderBE.setDryClean(true);
-                                                    objPlaceOrderBE.setDryCleanCloth(etClothes.getText().toString());
-                                                    objPlaceOrderBE.setDate(strDate);
-                                                    objPlaceOrderBE.setTimeSlot(strTime);
-                                                    objPlaceOrderBE.setSlotID(strSlotID);
-                                                    startActivity(new Intent(getApplicationContext(), OrderDetails.class).putExtra("PlaceOrderBE", objPlaceOrderBE));
-                                                    dialog.dismiss();
+                                                    int num=Integer.valueOf(etClothes.getText().toString());
+                                                    if(num>20){
+                                                        etClothes.setError("Please enter less than 20 clothes");
+                                                    }else {
+                                                        objPlaceOrderBE.setDryClean(true);
+                                                        objPlaceOrderBE.setDryCleanCloth(etClothes.getText().toString());
+                                                        objPlaceOrderBE.setDate(strDate);
+                                                        objPlaceOrderBE.setTimeSlot(strTime);
+                                                        objPlaceOrderBE.setSlotID(strSlotID);
+                                                        startActivity(new Intent(getApplicationContext(), OrderDetails.class).putExtra("PlaceOrderBE", objPlaceOrderBE));
+                                                        dialog.dismiss();
+                                                    }
                                                 }
                                                 else
                                                     etClothes.setError("Please Enter Number of Clothes ");

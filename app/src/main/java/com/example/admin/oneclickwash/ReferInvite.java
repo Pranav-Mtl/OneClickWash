@@ -127,7 +127,7 @@ public class ReferInvite extends AppCompatActivity implements View.OnClickListen
             try {
                 if (Constant.WS_RESPONSE_SUCCESS.equalsIgnoreCase(s)) {
                     btnShare.setText(objReferInviteBE.getReferCode());
-                    promoMessage = "Signup for OneClickWash Laundry Service using my promo code " + objReferInviteBE.getReferCode() + " and get a Discount of ₹" + objReferInviteBE.getReferValue() + ". Enjoy a hassle free laundry experience!!!";
+                    promoMessage = "Signup for OneClickWash Laundry Service using my promo code " + objReferInviteBE.getReferCode() + " and get a Discount of ₹" + objReferInviteBE.getReferValue() + ". Enjoy a hassle free laundry experience!!! \n GET APP# http://tinyurl.com/oneclickwash";
                     referMesssage="They get free gift voucher worth ₹"+objReferInviteBE.getReferValue() +" for subscribing to our services, and so do you!";
                     tvReferMessage.setText(referMesssage);
                 } else {

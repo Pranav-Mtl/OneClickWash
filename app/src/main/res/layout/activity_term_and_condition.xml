@@ -70,6 +70,31 @@
                     />
             </LinearLayout>
 
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_bg"
+                android:padding="5dp"
+                android:elevation="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Any excess clothes above the subscription limit, for the current/active subscription, will be charged at a flat rate of INR 10 per piece to close that particular subscription."
+                    />
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

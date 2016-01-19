@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -104,6 +105,8 @@ public class SignUpScreen extends AppCompatActivity {
         cbTerm= (CheckBox) findViewById(R.id.check_box_term);
         pd=new ProgressDialog(SignUpScreen.this);
 
+        tvTerm.setPaintFlags(tvTerm.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
         try {
             Application.tracker().setScreenName("Signup Screen");
             Application.tracker().send(new HitBuilders.EventBuilder()
@@ -166,6 +169,8 @@ public class SignUpScreen extends AppCompatActivity {
                         if (Util.isInternetConnection(SignUpScreen.this)) {
                             if(cbTerm.isChecked())
                             new SignUp().execute(email, phone, address, password, otp, name,deviceId,gcmID);
+                            else
+                                Toast.makeText(getApplicationContext(),"Please select Terms and Conditions",Toast.LENGTH_SHORT).show();
                         }
                         else
                             showDialogInternet(SignUpScreen.this);

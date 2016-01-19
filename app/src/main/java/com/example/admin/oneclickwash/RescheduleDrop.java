@@ -186,18 +186,7 @@ public class RescheduleDrop extends AppCompatActivity implements View.OnClickLis
                 dateViewFormatter.format(dateToDisplay.getTime())
         );
         // Buttons
-        dialogBuilder.setNegativeButton(
-                "Go to today",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        btnDate.setText(
-                                formatter.format(now.getTime())
-                        );
-                        dialog.dismiss();
-                    }
-                }
-        );
+
 
         dialogBuilder.setPositiveButton(
                 "Choose",
